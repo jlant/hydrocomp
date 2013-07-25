@@ -6,7 +6,8 @@
  
 :Email: jlant@usgs.gov
 
-:Purpose: Read, process, plot, and print information about an output file created 
+:Purpose: 
+Read, process, plot, and print information about an output file created 
 by the WATER application.
 
 """

@@ -6,7 +6,8 @@
  
 :Email: jlant@usgs.gov
 
-:Purpose: Calculate the following statistics:
+:Purpose: 
+Calculate the following statistics:
 
     - Nash-Sutcliffe
     - R Squared Coefficient

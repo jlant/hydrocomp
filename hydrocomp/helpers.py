@@ -6,7 +6,8 @@
  
 :Email: jlant@usgs.gov
 
-:Purpose: Helper functions for the hydrocomp.py module. Currently contains 
+:Purpose: 
+Helper functions for the hydrocomp.py module. Currently contains 
 functions to subset dates and find common date ranges betweent the model and 
 observed data files.
 
