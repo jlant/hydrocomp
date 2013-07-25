@@ -3,21 +3,27 @@ hydrocomp
 
 **DESCRIPTION**
 
-    hydrocomp is a repository that contains code that compares timeseries output from a model of 
-	a particular parameter (i.e. discharge) with an observed timeseries of the same parameter. 
-	The observed timeseries can be an NWIS data file that contains hydrologic parameters such as 
-	discharge, stage, sediment concentration, etc. Differences and statitics between modeled and 
-	observed hydrologic parameters are calculated.
+    hydrocomp is a project that contains python modules that compare timeseries output from a model of 
+	a particular parameter (i.e. discharge) with an observed timeseries of the same parameter and compute
+	differences and statitics between modeled and observed hydrologic parameters. For example, the model
+	timeseries can be a rainfall-runoff model output of estimated discharge and the observed timeseries can 
+	be an USGS NWIS data file that contains discharge as a hydrologic parameter.
 	
 	The following are the statistics calculated:
-	
-		*Nash-Sutcliffe
-		*R Squared Coefficient
-		*Mean Squared Error
-		*Absolute Error
-		*Relative Error
-		*Percent Error
-		*Percent Difference
+
+		* Nash-Sutcliffe
+
+		* R Squared Coefficient
+
+		* Mean Squared Error
+
+		* Absolute Error
+
+		* Relative Error
+
+		* Percent Error
+
+		* Percent Difference
 
 	*hydrocomp.py* is a module that contains functions to calculate, print, and plot comparision 
 	data and statitics.

@@ -6,19 +6,17 @@
  
 :Email: jlant@usgs.gov
 
-:Purpose: Compare timeseries output from a model (i.e. discharge, gage height,
+:Purpose: 
+Compare timeseries output from a model (i.e. discharge, gage height,
 sediment concentration, etc.) with an observed timeseries (i.e. USGS NWIS)
 Statistics such as Nash-Sutcliffe, percent errors, relative errors, etc. are
-computed and plotted.
-
-main() prompts user for observed and model files. Processes each file, prints 
-information, and plots data and statistics. Information is printed to the screen.  
-
-An interactive plot of the observed and modeled data comparison is created along
-with a plot of the relative error. User can interact with the plots via a 
-SpanSelector mouse widget. A toggle key event handler exists for the matplotlib 
-SpanSelector widget. A keypress of 'A' or 'a' actives the slider and a keypress 
-of 'Q' or 'q' de-activates the slider.
+computed and plotted. main() prompts user for observed and model files. Processes 
+each file, prints information, and plots data and statistics. Information is 
+printed to the screen. An interactive plot of the observed and modeled data 
+comparison is created alongwith a plot of the relative error. User can interact 
+with the plots via a SpanSelector mouse widget. A toggle key event handler exists 
+for the matplotlib SpanSelector widget. A keypress of 'A' or 'a' actives the 
+slider and a keypress of 'Q' or 'q' de-activates the slider.
 
 """
 

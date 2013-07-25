@@ -6,16 +6,16 @@
  
 :Email: jlant@usgs.gov
 
-:Purpose: Compare timeseries output from a model (i.e. discharge, gage height,
+:Purpose: 
+Compare timeseries output from a model (i.e. discharge, gage height,
 sediment concentration, etc.) with an observed timeseries (i.e. USGS NWIS)
 Statistics such as Nash-Sutcliffe, percent errors, relative errors, etc. are
-computed and plotted.
+computed and plotted. main() prompts user for observed and model files. Processes 
+each file, prints information, and plots data and statistics. Information is 
+printed to the screen. Plots are saved to a directory called 'figs' which is 
+created in the same directory as the data file. A log file called 'nwis_error.log' 
+is created if any errors are found in the data file.
 
-main() prompts user for observed and model files. Processes each file, prints 
-information, and plots data and statistics. Information is printed to the screen.  
-Plots are saved to a directory called 'figs' which is created in the same directory 
-as the data file. A log file called 'nwis_error.log' is created if any errors are 
-found in the data file.
 """
 
 #!/usr/bin/env python
