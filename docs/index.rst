@@ -43,3 +43,7 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
+
+Screenshot of hydrocompgui.py
+------------------------
+.. image:: _static/hydrocompgui.png

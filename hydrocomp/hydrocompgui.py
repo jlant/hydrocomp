@@ -165,7 +165,7 @@ if nwis_file and water_file:
             if user_parameter in parameter['description'].lower():
                 nwis_parameter = parameter['data']                
             else:
-                print user_parameter + ' parameter does not exist in observed file'            
+                print user_parameter + ' parameter does not exist in observed file'                    
         
         # get parameter from modeled file
         if user_parameter in water_data.keys():
@@ -212,7 +212,6 @@ if nwis_file and water_file:
         # print results
         hydrocomp.print_comp_data(comp_data = comp_data)
 
-        
         # plot 
         fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(nrows = 2, ncols= 2, figsize = (20, 12))
 
@@ -223,8 +222,8 @@ if nwis_file and water_file:
         ax1.set_xlabel('date')
         ax1.set_ylabel(comp_data['parameter_name'])
     
-        plot1a, = ax1.plot(comp_data['dates'], comp_data['observed_parameter'], color = 'b', marker = 'o', label = comp_data['observed_name'])
-        plot1b, = ax1.plot(comp_data['dates'], comp_data['modeled_parameter'], color = 'g', marker = 'o', label = comp_data['model_name'])
+        plot1a, = ax1.plot(comp_data['dates'], comp_data['observed_parameter'], color = 'b', label = comp_data['observed_name'])
+        plot1b, = ax1.plot(comp_data['dates'], comp_data['modeled_parameter'], color = 'g', label = comp_data['model_name'])
         
         # rotate and align the tick labels so they look better   
         plt.setp(ax1.xaxis.get_majorticklabels(), rotation = 30)
@@ -255,8 +254,8 @@ if nwis_file and water_file:
         ax2.set_xlabel('date')
         ax2.set_ylabel(comp_data['parameter_name'])
     
-        plot2a, = ax2.plot(comp_data['dates'], comp_data['observed_parameter'], color = 'b', marker = 'o', label = comp_data['observed_name'])
-        plot2b, = ax2.plot(comp_data['dates'], comp_data['modeled_parameter'], color = 'g', marker = 'o', label = comp_data['model_name'])
+        plot2a, = ax2.plot(comp_data['dates'], comp_data['observed_parameter'], color = 'b', label = comp_data['observed_name'])
+        plot2b, = ax2.plot(comp_data['dates'], comp_data['modeled_parameter'], color = 'g', label = comp_data['model_name'])
         
         # rotate and align the tick labels so they look better 
         plt.setp(ax2.xaxis.get_majorticklabels(), rotation = 30)
